@@ -1,0 +1,6 @@
+.build-venv/
+.verification/
+__pycache__/
+.DS_Store
+.playwright-cli/
+output/playwright/
