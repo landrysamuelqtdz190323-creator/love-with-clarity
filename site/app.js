@@ -78,7 +78,7 @@ function buildReport(form) {
   const fields = [...form.querySelectorAll("textarea[data-label]")];
   if (!fields.some(field => field.value.trim())) return "";
   const parts = fields.map(field => `## ${field.dataset.label}\n\n${field.value.trim() || "（尚未填写）"}`);
-  return `# ${form.dataset.title}\n\n${parts.join("\n\n")}\n\n---\n由填写者自行整理，未经过 AI 分析。包含个人资料时请谨慎分享。\n练习来自《看清关系，也照顾自己》v0.1.0，CC BY 4.0。\n`;
+  return `# ${form.dataset.title}\n\n${parts.join("\n\n")}\n\n---\n由填写者自行整理，未经过 AI 分析。包含个人资料时请谨慎分享。\n练习来自《看清关系，也照顾自己》v1.0.0，CC BY 4.0。\n`;
 }
 
 for (const form of document.querySelectorAll("form[data-exercise]")) {
