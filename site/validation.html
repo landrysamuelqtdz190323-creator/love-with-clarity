@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="从具体行为出发，整理感受与需求，选择自己的下一步。公开指南、20个场景与可导入的AI Skill。">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>实际验证记录 · 看清关系，也照顾自己</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body><a class="skip" href="#main">跳到正文</a><header class="topbar"><div class="wrap header-inner">
+<a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◌</span><span>看清关系，也照顾自己<small>LOVE WITH CLARITY</small></span></a>
+<nav class="nav" aria-label="主要导航"><a href="guide.html">指南</a><a href="index.html#scenes">场景</a><a href="index.html#exercises">练习</a><a href="install.html">安装 Skill</a></nav></div></header>
+<main id="main" class="prose"><a class="document-back" href="index.html">← 回到阅读首页</a><h1 id="实际验证记录">实际验证记录</h1>
+<p>版本：v0.1.0。检查日期：2026-10-01。</p>
+<h2 id="本次范围">本次范围</h2>
+<p>文件完整性检查和真实网页交互检查已完成以下项目。构建成功不代表专业审阅、真实用户效果或所有宿主模型行为已验证。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>实际结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标准 Skill</td>
+<td>skill-creator 检查通过；名称、说明、版本和 UI 元数据有效</td>
+</tr>
+<tr>
+<td>内容关联</td>
+<td>20 张场景卡编号唯一，索引、来源标识与 Markdown 内部链接检查通过</td>
+</tr>
+<tr>
+<td>安装包</td>
+<td>两个 ZIP 完整性通过；所有参考资料与许可齐全；正文相同，WorkBuddy 必需元数据有效</td>
+</tr>
+<tr>
+<td>Codex 本地发现</td>
+<td>Codex CLI 0.159.2 从解压包的项目技能目录实际识别到一个同名技能；启用状态与中文 UI 元数据正确</td>
+</tr>
+<tr>
+<td>阅读网页</td>
+<td>13 个 HTML 页面、内部目标与锚点有效；资源均在本地</td>
+</tr>
+<tr>
+<td>场景检索</td>
+<td>应用内浏览器中“定位”只显示 S10；安全类别显示对应6张卡；无匹配时显示空结果提示</td>
+</tr>
+<tr>
+<td>三份练习</td>
+<td>实际填写、切换与生成通过；特殊字符按文本保留；切换后可继续填写</td>
+</tr>
+<tr>
+<td>复制与清空</td>
+<td>实际复制结果含虚构输入；清空后全部填写和整理稿为空</td>
+</tr>
+<tr>
+<td>手机布局</td>
+<td>390px 视口下页面内容宽度375px，无横向溢出；已查看页面截图与练习字段</td>
+</tr>
+<tr>
+<td>桌面布局</td>
+<td>1440px 视口下页面内容宽度1425px，双列布局且无横向溢出；应用面板截图范围有限，未替代完整桌面浏览器的视觉验收</td>
+</tr>
+</tbody>
+</table>
+<p>Codex 检查使用隔离的项目目录，没有安装到个人技能目录，没有启动模型对话。它证明可发现与解析，不能证明全部回答行为。</p>
+<p>程序没有表单提交、外部网络调用或长期存储逻辑；静态资源检查未发现外部加载。检查时使用的输入全部为虚构内容。</p>
+<h2 id="浏览器导出限制">浏览器导出限制</h2>
+<p>应用内浏览器中的 Markdown 下载按钮已触发，但未收到完成的下载事件，不能认定文件保存成功。复制已实际验证；下载完成流程仍需在常规桌面浏览器中验证。按钮提示未保存时使用复制，避免把发起下载写成保存成功。</p>
+<p>Skill ZIP 文件本身与 SHA256 校验已通过；这不等于所有浏览器都能完成下载。</p>
+<h2 id="等待后续验证">等待后续验证</h2>
+<ul>
+<li>WorkBuddy 的实际导入和调用。</li>
+<li>常规桌面浏览器的完整视觉验收、Markdown 下载保存流程与本地文件直接打开流程。</li>
+<li>不同宿主模型的真实行为测试，使用 <a href="evaluation.html">行为评估用例</a>。</li>
+<li>独立心理专业审阅与真实用户效果评估。</li>
+<li>公开仓库、公共网站与市场发布状态；本地文件不能证明已经发布。</li>
+</ul>
+<p>五个演示回答为编写的虚构例子，不记作模型测试。</p>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>v0.1.0 草案 · 来源已核对 · 尚待独立专业审阅</span><div class="footer-links"><a href="sources.html">来源与局限</a><a href="privacy.html">隐私</a><a href="validation.html">验证记录</a><a href="license.html">许可</a></div></div></footer></body></html>
