@@ -15,7 +15,7 @@ from markdown_it import MarkdownIt
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skills" / "love-with-clarity"
 SITE = ROOT / "site"
-VERSION = "0.1.0"
+VERSION = "1.0.0"
 
 
 def split_frontmatter(path):
@@ -87,7 +87,7 @@ def wrapper(title, body, article=False):
 <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">◌</span><span>看清关系，也照顾自己<small>LOVE WITH CLARITY</small></span></a>
 <nav class="nav" aria-label="主要导航"><a href="guide.html">指南</a><a href="index.html#scenes">场景</a><a href="index.html#exercises">练习</a><a href="install.html">安装 Skill</a></nav></div></header>
 <main id="main" class="{main_class}">{body}</main>
-<footer class="footer"><div class="wrap footer-inner"><span>v{VERSION} 草案 · 来源已核对 · 尚待独立专业审阅</span><div class="footer-links"><a href="sources.html">来源与局限</a><a href="privacy.html">隐私</a><a href="validation.html">验证记录</a><a href="license.html">许可</a></div></div></footer></body></html>'''
+<footer class="footer"><div class="wrap footer-inner"><span>v{VERSION} · 来源与验证记录可查</span><div class="footer-links"><a href="sources.html">来源与局限</a><a href="privacy.html">隐私</a><a href="validation.html">验证记录</a><a href="license.html">许可</a></div></div></footer></body></html>'''
 
 
 def download_links():
@@ -186,7 +186,7 @@ def main():
 <section class="intro-strip" aria-label="怎样使用"><div><span class="number">01</span><b>看具体行为</b><p>分开事实、感受与猜测，保留未知。</p></div><div><span class="number">02</span><b>说清自己的需要</b><p>找到可调整的请求与个人边界。</p></div><div><span class="number">03</span><b>选一个小行动</b><p>决定由你作出，也给自己现实支持。</p></div></section>
 <section class="section" id="scenes"><div class="section-head"><div><h2>哪件事，让你放不下？</h2><p>选最贴近的一张卡，展开看看。它们帮助反思，不给爱情打分。</p></div><a class="text-link" href="safety.html">需要安全支持 ↗</a></div><div class="search-box"><label for="scenario-search">找场景</label><input id="scenario-search" type="search" placeholder="例如：不回消息、道歉、朋友、拒绝" autocomplete="off"></div><div class="filters" aria-label="按类别筛选">{filters}</div><div class="results-line"><span id="result-count" role="status" aria-live="polite">找到 20 个场景</span><button id="reset-filters" type="button" class="plain-button">清除筛选</button></div><div class="scene-grid">{''.join(card_html)}</div><p id="empty-results" class="empty" hidden>没有找到对应场景，试试更简短的词，或清除筛选。</p></section>
 <section class="section practice-section" id="exercises"><div class="section-head"><div><h2>留一点时间，整理自己。</h2><p>只写愿意处理的部分。填写不上传；导出与复制由你决定。</p></div><button id="clear-all" type="button" class="plain-button">清空全部填写</button></div><div class="practice-layout"><div><div class="tabs" role="tablist" aria-label="选择练习"><button id="tab-facts" class="tab" role="tab" type="button" data-panel="exercise-facts" aria-controls="exercise-facts" aria-selected="true"><b>事实与猜测</b><span>把一个事件拆开看</span></button><button id="tab-needs" class="tab" role="tab" type="button" data-panel="exercise-needs" aria-controls="exercise-needs" aria-selected="false" tabindex="-1"><b>需求与边界</b><span>找到能说出口的话</span></button><button id="tab-care" class="tab" role="tab" type="button" data-panel="exercise-care" aria-controls="exercise-care" aria-selected="false" tabindex="-1"><b>七天自我关爱</b><span>恢复一点自己的生活</span></button></div><p class="practice-tip">有威胁、强迫或暴力时，请先关注安全。<a href="safety.html">查看支持入口</a><br>想用纸笔？<a href="facts.html">事实表</a> · <a href="needs.html">需求表</a> · <a href="care.html">自我关爱表</a></p></div><div>{facts}{needs}{care}</div></div></section>
-<section class="section"><div class="install-band"><div><h2>把这套方法，带进你的 AI 对话。</h2><p>Skill 会根据问题读取相关场景，帮助整理实际行为、需求和可选行动。安装前可查看说明与虚构演示。</p></div><div class="actions"><a class="btn" href="install.html">安装 Skill ↗</a><a class="text-link" href="examples.html">看五个演示</a></div></div></section><aside class="safety-note"><p>本版为 AI 协助起草的草案，来源已核对，尚待独立专业审阅。场景与练习不是诊断、治疗或个人风险评估。</p><a class="text-link" href="sources.html">了解依据与局限 ↗</a></aside>'''
+<section class="section"><div class="install-band"><div><h2>把这套方法，带进你的 AI 对话。</h2><p>Skill 会根据问题读取相关场景，帮助整理实际行为、需求和可选行动。安装前可查看说明与虚构演示。</p></div><div class="actions"><a class="btn" href="install.html">安装 Skill ↗</a><a class="text-link" href="examples.html">看五个演示</a></div></div></section><aside class="safety-note"><p>场景与练习不是诊断、治疗或个人风险评估。</p><a class="text-link" href="sources.html">了解依据与局限 ↗</a></aside>'''
     (SITE / "index.html").write_text(wrapper("阅读与练习", body), encoding="utf-8")
     build_packages()
     print(json.dumps({"version": VERSION, "scenarios": len(cards), "reader_pages": len(list(SITE.glob('*.html'))), "packages": 2}, ensure_ascii=False))

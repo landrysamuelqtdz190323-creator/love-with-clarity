@@ -15,7 +15,7 @@ from markdown_it import MarkdownIt
 ROOT = Path(__file__).resolve().parents[1]
 SKILL = ROOT / "skills/love-with-clarity"
 SITE = ROOT / "site"
-VERSION = "0.1.0"
+VERSION = "1.0.0"
 MD = MarkdownIt("commonmark", {"html": False}).enable("table")
 
 
