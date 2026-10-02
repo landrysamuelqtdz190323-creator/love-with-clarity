@@ -1,10 +1,12 @@
 # 看清关系，也照顾自己 · Love With Clarity
 
+版本：v1.0.0。
+
 从具体行为出发，整理感受与需求，选择自己的下一步。
 
 这是一份中文公开指南、20 张场景卡、三份练习，以及可在 Codex、WorkBuddy 中使用的 AI Skill。适合成年用户思考现有伴侣关系，不限定性别、性取向或是否已婚。
 
-**v0.1.0 是 AI 协助起草的公开草案；来源已核对，尚未经过独立心理专业审阅或真实用户效果评估。** 它提供个人反思与沟通支持，不是心理诊断、爱情评分工具或紧急援助服务。
+它提供个人反思与沟通支持，不是心理诊断、爱情评分工具或紧急援助服务。
 
 ## 从这里开始
 
@@ -44,7 +46,7 @@ Skill 需要宿主平台的 AI 服务。平台可能处理你在对话中输入�
 
 安装前先阅读 [安装说明](docs/install.md)。网页中的两个下载包分别对应 Codex 与 WorkBuddy；它们不是整个仓库的 ZIP。更新时保留需要的旧版本，避免重复安装同名 Skill。
 
-[下载 WorkBuddy ZIP](site/downloads/love-with-clarity-workbuddy-0.1.0.zip) · [下载 Codex ZIP](site/downloads/love-with-clarity-codex-0.1.0.zip) · [SHA256 校验值](site/downloads/SHA256SUMS)
+[下载 WorkBuddy ZIP](site/downloads/love-with-clarity-workbuddy-1.0.0.zip) · [下载 Codex ZIP](site/downloads/love-with-clarity-codex-1.0.0.zip) · [SHA256 校验值](site/downloads/SHA256SUMS)
 
 ## 一起改进
 
