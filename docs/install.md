@@ -6,8 +6,8 @@
 
 | 平台 | 下载包 | 解压后的关键结构 |
 | --- | --- | --- |
-| Codex | `love-with-clarity-codex-0.1.0.zip` | `love-with-clarity/SKILL.md` 及同目录的 `references/` |
-| WorkBuddy | `love-with-clarity-workbuddy-0.1.0.zip` | ZIP 根目录直接有 `SKILL.md` 和 `references/` |
+| Codex | `love-with-clarity-codex-1.0.0.zip` | `love-with-clarity/SKILL.md` 及同目录的 `references/` |
+| WorkBuddy | `love-with-clarity-workbuddy-1.0.0.zip` | ZIP 根目录直接有 `SKILL.md` 和 `references/` |
 
 文件位于网页的“安装 Skill”入口，或仓库 `site/downloads/`。整个项目 ZIP 用于阅读与维护，不能代替 WorkBuddy 的专用技能包。
 
@@ -15,7 +15,7 @@
 
 1. 打开 WorkBuddy，进入“技能”或“专家·技能·连接器 → 技能”。
 2. 选择“添加技能 → 上传技能”。
-3. 选择 `love-with-clarity-workbuddy-0.1.0.zip`，保持原包，不必自行解压再压缩。
+3. 选择 `love-with-clarity-workbuddy-1.0.0.zip`，保持原包，不必自行解压再压缩。
 4. 在“已安装”列表确认出现“看清关系，也照顾自己”，并确认处于启用状态。
 5. 新建对话，选择该技能或明确说“使用看清关系，也照顾自己这个技能”，尝试下方的虚构事件。
 
@@ -68,4 +68,3 @@ WorkBuddy 可在已安装列表关闭技能；Codex 的启用/停用方式以当
 ## 输入资料前
 
 阅读 [隐私说明](privacy.md)。本包没有执行脚本、没有项目服务器，但宿主 AI 会按该平台的机制处理对话内容。自行选择是否分享概括事件、是否复制结果和是否保存报告。
-
