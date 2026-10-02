@@ -1,0 +1,5 @@
+interface:
+  display_name: "看清关系，也照顾自己"
+  short_description: "整理伴侣关系中的行为与需求，形成沟通、边界和自我关爱的下一步"
+  default_prompt: "请用 $love-with-clarity 帮我整理一件伴侣关系中的具体事件，区分事实和猜测，再讨论我可以选择的下一步。"
+
